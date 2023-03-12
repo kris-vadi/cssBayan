@@ -58,8 +58,22 @@ body {
 }
 
 @media (hover: hover) {   
-
+    .bayan:hover > .bayan__item .bayan__label .bayan__icon {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .bayan__item:hover > .bayan__label .bayan__icon {
+        transform: rotate(45deg);        
+    }    
+    .bayan__item:hover > .bayan__label .bayan__meme {
+        width: 100%;
+    }
+    .bayan:hover .bayan__label,
+    .bayan__input:checked ~ .bayan__label{
+        color: #161616;
+    }
 }
+
 @media screen and (min-width: 320px) {
 
 }

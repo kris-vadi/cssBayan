@@ -6,6 +6,8 @@ body {
     max-width: 45%;
     margin: 5% auto;
     min-height: 100%;
+    color: #85abcf;
+    font-size: 1.2em;
 }
 .bayan-container__title {
     font-size: 2em;
@@ -13,24 +15,57 @@ body {
     margin: 5% auto;
 }
 
-.bayan_label {    
+.bayan__item {    
+    border-bottom: 0.05em solid #161616;
+}
+.bayan__item:first-child {    
+    border-top: 0.05em solid #161616;
+}
+.bayan__label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.label__title {
     display: flex;
     justify-content: space-between;
-    margin: 0.5em;
+    margin: 3%;
+    font-weight: bold;
 }
 .bayan__icon {
     width: 1em;
+    opacity: 0;
+    transition: transform 0.8s ease-in-out;
 }
 .bayan__input {
-    appearance: none;
+  display: none;
+}
+.bayan__meme {
     width: 0;
-    height: 0;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
 }
-.bayan__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.bayan__input:checked ~ .bayan__label .bayan__meme {
+    width: 100%;
 }
-.bayan__image img {
-    max-width: 100%;
+.bayan__input:checked ~ label .bayan__icon {
+    transform: rotate(45deg);
+  }
+.bayan__input:checked ~ .bayan__label {
+    color: #161616;
+}
+
+@media (hover: hover) {   
+
+}
+@media screen and (min-width: 320px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1280px) {
+
 }

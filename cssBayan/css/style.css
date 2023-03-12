@@ -1,4 +1,36 @@
-* {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bayan-container {
+    max-width: 45%;
+    margin: 5% auto;
+    min-height: 100%;
+}
+.bayan-container__title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5% auto;
+}
+
+.bayan_label {    
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+.bayan__icon {
+    width: 1em;
+}
+.bayan__input {
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+.bayan__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bayan__image img {
     max-width: 100%;
 }
